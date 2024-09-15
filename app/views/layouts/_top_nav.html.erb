@@ -47,7 +47,7 @@
         <% if session[:user_id] %>
           <!-- User is logged in -->
           <li class="nav-item">
-            <%= link_to 'Sign out', destroy_session_path, method: :delete, class: "nav-link" %>
+            <%= link_to 'Sign out', '/sessions/:id', method: :delete, class: "nav-link" %>
           </li>
         <% else %>
           <!-- User is not logged in -->
